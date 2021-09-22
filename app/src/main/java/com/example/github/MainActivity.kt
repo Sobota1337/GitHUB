@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+        {
+            findViewById<FloatingActionButton>(R.id.button).setOnClickListener { view ->
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
