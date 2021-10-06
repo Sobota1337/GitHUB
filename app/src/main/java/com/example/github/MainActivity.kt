@@ -6,6 +6,9 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.webkit.WebView
+import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,14 +19,40 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                .setAction("Action", null).show()
         }
-        {
-            findViewById<FloatingActionButton>(R.id.button).setOnClickListener { view ->
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+
+        findViewById<Button>(R.id.nr1).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "1"
         }
+        findViewById<Button>(R.id.nr2).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "2"
+        }
+
+        findViewById<Button>(R.id.nr3).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "3"
+        }
+        findViewById<Button>(R.id.nr4).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "4"
+        }
+        findViewById<Button>(R.id.nr5).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "5"
+        }
+        findViewById<Button>(R.id.nr6).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "6"
+        }
+        findViewById<Button>(R.id.nr7).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "7"
+        }
+        findViewById<Button>(R.id.nr8).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "8"
+        }
+        findViewById<Button>(R.id.nr9).setOnClickListener {
+            findViewById<TextView>(R.id.textView1).text = "9"
+        }
+
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -39,6 +68,8 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
-        //
+
+
     }
 }
+
